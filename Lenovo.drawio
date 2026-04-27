@@ -1,0 +1,42 @@
+<mxfile host="Electron">
+  <diagram name="Hybrid AI Cluster" id="23tVP3DsisGPqnhU9qpr">
+    <mxGraphModel dx="4309" dy="3028" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" value="Users (200+ DS)" vertex="1">
+          <mxGeometry height="60" width="200" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-2" parent="1" style="rounded=1;fillColor=#d5e8d4;" value="Kubernetes Control Plane" vertex="1">
+          <mxGeometry height="80" width="220" x="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-3" parent="1" style="rounded=1;fillColor=#f8cecc;" value="Slurm Controller" vertex="1">
+          <mxGeometry height="80" width="200" x="480" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-4" parent="1" style="rounded=1;fillColor=#fff2cc;" value="GPU Nodes (64 x 8 GPUs)\nDual Use (Slurm/K8s)" vertex="1">
+          <mxGeometry height="100" width="350" x="250" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-5" parent="1" style="rounded=1;fillColor=#e1d5e7;" value="InfiniBand Fabric (Training)" vertex="1">
+          <mxGeometry height="80" width="250" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-6" parent="1" style="rounded=1;fillColor=#e1d5e7;" value="Ethernet Fabric (Control + Services)" vertex="1">
+          <mxGeometry height="80" width="250" x="420" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-7" parent="1" style="rounded=1;fillColor=#d5e8d4;" value="Lustre / GPFS Storage\n≥500 GB/s" vertex="1">
+          <mxGeometry height="80" width="300" x="250" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-8" parent="1" style="rounded=1;fillColor=#f5f5f5;" value="AWS Burst (p5 instances)" vertex="1">
+          <mxGeometry height="80" width="200" x="700" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-9" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-1" target="zprz8n6YDAYGdjXXg0Lg-2" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-10" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-1" target="zprz8n6YDAYGdjXXg0Lg-3" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-11" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-2" target="zprz8n6YDAYGdjXXg0Lg-4" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-12" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-3" target="zprz8n6YDAYGdjXXg0Lg-4" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-13" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-4" target="zprz8n6YDAYGdjXXg0Lg-5" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-14" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-4" target="zprz8n6YDAYGdjXXg0Lg-6" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-15" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-4" target="zprz8n6YDAYGdjXXg0Lg-7" />
+        <mxCell id="zprz8n6YDAYGdjXXg0Lg-16" edge="1" parent="1" source="zprz8n6YDAYGdjXXg0Lg-3" target="zprz8n6YDAYGdjXXg0Lg-8" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
